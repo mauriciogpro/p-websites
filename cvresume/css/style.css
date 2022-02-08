@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: #333;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1, 6;
+  margin: 0.5em;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 25px;
+  letter-spacing: 0px;
+  margin: 0 15px;
+  display: inline;
+}
+
+.name {
+  display: inline;
+  color: white;
+  text-align: right;
+}
+h3 {
+  letter-spacing: 1px;
+  margin: 15px 0px;
+}
+
+main {
+  margin-top: 3em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.hidden a :visited {
+  color: #333;
+}
+
+.container p {
+  margin: 20px 0;
+}
+
+.column {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  padding: 1em 4em;
+}
+
+.sidebar {
+  width: 30vw;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: #00aa00 1px dotted;
+}
+.sidebar ul li {
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar ul :hover {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
+.menu {
+  margin: 2.5em 1em;
+}
+.menu ul {
+  margin: 1em;
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu ul :hover {
+  color: var(--text-color);
+}
+
+.menu ul li {
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer {
+  width: 100%;
+}
+
+.origin {
+  color: rgb(87, 87, 87);
+  font-style: italic;
+}
+.date {
+  color: rgb(87, 87, 87);
+}
+
+.fab {
+  font-size: 50px;
+  margin: 0.5rem;
+}
+.fas {
+  font-size: 50px;
+}
+
+table {
+  width: 100%;
+  margin: 1em;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+}
+
+/* @media (max-width: 000px) {
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 560px;
+    height: 270vh;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .menu ul {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin: 2px;
+    border: none;
+    border-top: #00aa00 1px solid;
+  }
+} */
